@@ -49,7 +49,7 @@ namespace Calcula_Custas
                         tbcApplications.TabPages.Remove(tbcApplications.SelectedTab);
                         menuOptConfSelosBDI.Enabled = true;
                         break;
-                    case "Conferência de Selos":
+                    case "Importar Atos SAN / CARTOSOFT":
                         tbcApplications.TabPages.Remove(tbcApplications.SelectedTab);
                         menuOptConfSelos.Enabled = true;
                         break;
@@ -85,10 +85,15 @@ namespace Calcula_Custas
                         tbcApplications.TabPages.Remove(tbcApplications.SelectedTab);
                         menuOptLivroCaixa.Enabled = true;
                         break;
-
+                    case "Relatório Semestral CNJ":
+                        tbcApplications.TabPages.Remove(tbcApplications.SelectedTab);
+                        menuOptCNJSemestral.Enabled = true;
+                        break;
 
 
                         
+
+
                     default:
 
                         break;
@@ -185,8 +190,8 @@ namespace Calcula_Custas
             btnFrmMainMenuFecharAba.Visible = true;
             frmConferenciaSelosUC f = new frmConferenciaSelosUC();
             TabPage tp = new TabPage();
-            tp.Text = "Conferência de Selos";
-            tp.Name = "Conferência de Selos";
+            tp.Text = "Importar Atos SAN / CARTOSOFT";
+            tp.Name = "Importar Atos SAN / CARTOSOFT";
             tp.Controls.Add(f);
             tbcApplications.TabPages.Add(tp);
             tbcApplications.SelectedTab = tp;
@@ -257,6 +262,20 @@ namespace Calcula_Custas
             TabPage tp = new TabPage();
             tp.Text = "Gerar Livro Caixa";
             tp.Name = "Gerar Livro Caixa";
+            tp.Controls.Add(f);
+            tbcApplications.TabPages.Add(tp);
+            tbcApplications.SelectedTab = tp;
+            tbcApplications.Visible = true;
+        }
+
+        private void cNJSemestralToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            menuOptCNJSemestral.Enabled = false;
+            btnFrmMainMenuFecharAba.Visible = true;
+            frmGerarRelatorioSemestralCNJ f = new frmGerarRelatorioSemestralCNJ();
+            TabPage tp = new TabPage();
+            tp.Text = "Relatório Semestral CNJ";
+            tp.Name = "Relatório Semestral CNJ";
             tp.Controls.Add(f);
             tbcApplications.TabPages.Add(tp);
             tbcApplications.SelectedTab = tp;

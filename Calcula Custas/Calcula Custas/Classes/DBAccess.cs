@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 
 //Class used to access the 3 databases used in the project:
-//  1-Remote server database (FIREBIRD) that hosts the data for the SAN System(Notas)
-//  2-Remote server database (ODBC) that hosts the data for the CARTOSOFT System (Registro Civil)
-//  3-Local database(SQL Server) that stores the data on the services done in the Cartório that were pulled from both legacy databases
+//  1-Remote server database (FIREBIRD) that hosts the data for the "SAN" System (Notas)
+//  2-Remote server database (ODBC) that hosts the data for the "CARTOSOFT" System (Registro Civil)
+//  3-Local database(SQL Server) that stores the data on the services done in the Cartório that were pulled from both legacy databases "SAN" and "CARTOSOFT"
 namespace Calcula_Custas.Classes
 {
     public class DBAccess
@@ -51,7 +51,8 @@ namespace Calcula_Custas.Classes
                     {
                         if (this.codDB == 3)
                         {
-                            stringConn = "Data Source=LAPTOP-QQAL12IV;Initial Catalog=cartoassistdb;User ID=sa;Password=master13";
+                            //stringConn = "Data Source=LAPTOP-QQAL12IV;Initial Catalog=cartoassistdb;User ID=sa;Password=master13";
+                            stringConn = "Data Source=GUIN1;Initial Catalog=cartoassistdb;User ID=sa;Password=masterkey";
                             connDB = new SqlConnection(stringConn);
                             connDB.Open();
                         }

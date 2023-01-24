@@ -1,4 +1,5 @@
 ﻿using Calcula_Custas.Classes;
+//using FirebirdSql;
 using FirebirdSql.Data.FirebirdClient;
 using System;
 using System.Collections.Generic;
@@ -44,7 +45,7 @@ namespace Calcula_Custas
             {
                 gbxConfSelosResultadoPesquisa.Visible = false;
                 gbxConfSelosTotalConsultas.Visible = false;
-                if (!mskFrmConfSeloANO.MaskCompleted || int.Parse(mskFrmConfSeloANO.Text) > 2022)
+                if (!mskFrmConfSeloANO.MaskCompleted || int.Parse(mskFrmConfSeloANO.Text) > DateTime.Now.Year)
                 {
                     MessageBox.Show("Digite um valor válido para ANO", "Erro", MessageBoxButtons.OK);
                     return;

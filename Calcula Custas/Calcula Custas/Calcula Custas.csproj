@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Calcula_Custas</RootNamespace>
     <AssemblyName>Calcula Custas</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -241,6 +241,12 @@
     <Compile Include="frmGerarRelatorioContabilidade.Designer.cs">
       <DependentUpon>frmGerarRelatorioContabilidade.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGerarRelatorioSemestralCNJ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmGerarRelatorioSemestralCNJ.Designer.cs">
+      <DependentUpon>frmGerarRelatorioSemestralCNJ.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmImportaDadosBD.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -311,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGerarRelatorioContabilidade.resx">
       <DependentUpon>frmGerarRelatorioContabilidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGerarRelatorioSemestralCNJ.resx">
+      <DependentUpon>frmGerarRelatorioSemestralCNJ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmImportaDadosBD.resx">
       <DependentUpon>frmImportaDadosBD.cs</DependentUpon>

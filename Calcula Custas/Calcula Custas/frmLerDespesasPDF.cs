@@ -88,12 +88,19 @@ namespace Calcula_Custas
                         valores[0] = valores[1] + valores[2] + valores[3];
 
                         //MessageBox.Show(valores[0]);
-                        db3.SQLReplaceGenerico(valores[0], "DESPESAS", colunas, valores);
+                        if (Double.TryParse(valores[3],out double vDespesa) && vDespesa > 0)
+                        {
+                            db3.SQLReplaceGenerico(valores[0], "DESPESAS", colunas, valores);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Despesa não pôde ser lida!\n\"" + valores[0] +"\"\nFavor realizar a inclusão avulsa da despesa referida", "Erro!");
+                        }
                     }
 
                 }
                 db3.CloseConn();
-                MessageBox.Show("Despesas incluídas com sucesso no nanco de dados!");
+                MessageBox.Show("Despesas incluídas com sucesso no banco de dados!");
             }
         }
 

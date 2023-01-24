@@ -44,6 +44,7 @@
             this.menuOptRelatorioMensalContabilidade = new System.Windows.Forms.ToolStripMenuItem();
             this.menuOptRelatorioUtilizacaoDeSelos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuOptLivroCaixa = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuOptCNJSemestral = new System.Windows.Forms.ToolStripMenuItem();
             this.testesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teste1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbcApplications = new System.Windows.Forms.TabControl();
@@ -61,7 +62,8 @@
             this.testesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,13 +73,13 @@
             this.menuOptConfSelosBDI,
             this.menuOptConfSelos,
             this.menuOptAbrirArquivo,
-            this.toolStripMenuImportarAtos,
             this.toolStripMenuConsultarAlterarSelos,
             this.incluirSeloAvulsoToolStripMenuItem,
             this.menuOptImportarDespesasPDF,
-            this.toolStripMenuItem5});
+            this.toolStripMenuItem5,
+            this.toolStripMenuImportarAtos});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(60, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(122, 20);
             this.toolStripMenuItem1.Text = "Menu";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -86,56 +88,57 @@
             this.menuOptConfSelosBDI.Name = "menuOptConfSelosBDI";
             this.menuOptConfSelosBDI.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.C)));
-            this.menuOptConfSelosBDI.Size = new System.Drawing.Size(319, 26);
+            this.menuOptConfSelosBDI.Size = new System.Drawing.Size(254, 22);
             this.menuOptConfSelosBDI.Text = "Conferência Selos BDI";
             this.menuOptConfSelosBDI.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // menuOptConfSelos
             // 
             this.menuOptConfSelos.Name = "menuOptConfSelos";
-            this.menuOptConfSelos.Size = new System.Drawing.Size(319, 26);
-            this.menuOptConfSelos.Text = "Conferência Selos";
+            this.menuOptConfSelos.Size = new System.Drawing.Size(254, 22);
+            this.menuOptConfSelos.Text = "Importar Atos SAN / CARTOSOFT";
             this.menuOptConfSelos.Click += new System.EventHandler(this.conferênciaSelosToolStripMenuItem_Click);
             // 
             // menuOptAbrirArquivo
             // 
             this.menuOptAbrirArquivo.Name = "menuOptAbrirArquivo";
-            this.menuOptAbrirArquivo.Size = new System.Drawing.Size(319, 26);
+            this.menuOptAbrirArquivo.Size = new System.Drawing.Size(254, 22);
             this.menuOptAbrirArquivo.Text = "Atualizar Tabela de Emolumentos";
             this.menuOptAbrirArquivo.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuImportarAtos
             // 
             this.toolStripMenuImportarAtos.Name = "toolStripMenuImportarAtos";
-            this.toolStripMenuImportarAtos.Size = new System.Drawing.Size(319, 26);
+            this.toolStripMenuImportarAtos.Size = new System.Drawing.Size(254, 22);
             this.toolStripMenuImportarAtos.Text = "Importar Atos do Banco de Dados";
+            this.toolStripMenuImportarAtos.Visible = false;
             this.toolStripMenuImportarAtos.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuConsultarAlterarSelos
             // 
             this.toolStripMenuConsultarAlterarSelos.Name = "toolStripMenuConsultarAlterarSelos";
-            this.toolStripMenuConsultarAlterarSelos.Size = new System.Drawing.Size(319, 26);
+            this.toolStripMenuConsultarAlterarSelos.Size = new System.Drawing.Size(254, 22);
             this.toolStripMenuConsultarAlterarSelos.Text = "Consultar/Alterar Selos";
             this.toolStripMenuConsultarAlterarSelos.Click += new System.EventHandler(this.toolStripMenuItem2_Click_1);
             // 
             // incluirSeloAvulsoToolStripMenuItem
             // 
             this.incluirSeloAvulsoToolStripMenuItem.Name = "incluirSeloAvulsoToolStripMenuItem";
-            this.incluirSeloAvulsoToolStripMenuItem.Size = new System.Drawing.Size(319, 26);
+            this.incluirSeloAvulsoToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
             this.incluirSeloAvulsoToolStripMenuItem.Text = "Incluir Selo Avulso";
             this.incluirSeloAvulsoToolStripMenuItem.Click += new System.EventHandler(this.incluirSeloAvulsoToolStripMenuItem_Click);
             // 
             // menuOptImportarDespesasPDF
             // 
             this.menuOptImportarDespesasPDF.Name = "menuOptImportarDespesasPDF";
-            this.menuOptImportarDespesasPDF.Size = new System.Drawing.Size(319, 26);
+            this.menuOptImportarDespesasPDF.Size = new System.Drawing.Size(254, 22);
             this.menuOptImportarDespesasPDF.Text = "Importar Despesas PDF";
             this.menuOptImportarDespesasPDF.Click += new System.EventHandler(this.menuOptImportarDespesasPDF_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(319, 26);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(254, 22);
             this.toolStripMenuItem5.Text = "Sair";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
@@ -144,22 +147,23 @@
             this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuOptRelatorioMensalContabilidade,
             this.menuOptRelatorioUtilizacaoDeSelos,
-            this.menuOptLivroCaixa});
+            this.menuOptLivroCaixa,
+            this.menuOptCNJSemestral});
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
             // menuOptRelatorioMensalContabilidade
             // 
             this.menuOptRelatorioMensalContabilidade.Name = "menuOptRelatorioMensalContabilidade";
-            this.menuOptRelatorioMensalContabilidade.Size = new System.Drawing.Size(246, 26);
+            this.menuOptRelatorioMensalContabilidade.Size = new System.Drawing.Size(192, 22);
             this.menuOptRelatorioMensalContabilidade.Text = "Contabilidade Mensal";
             this.menuOptRelatorioMensalContabilidade.Click += new System.EventHandler(this.toolStripMenuItem2_Click_2);
             // 
             // menuOptRelatorioUtilizacaoDeSelos
             // 
             this.menuOptRelatorioUtilizacaoDeSelos.Name = "menuOptRelatorioUtilizacaoDeSelos";
-            this.menuOptRelatorioUtilizacaoDeSelos.Size = new System.Drawing.Size(246, 26);
+            this.menuOptRelatorioUtilizacaoDeSelos.Size = new System.Drawing.Size(192, 22);
             this.menuOptRelatorioUtilizacaoDeSelos.Text = "Utilização de Selos BDI";
             this.menuOptRelatorioUtilizacaoDeSelos.Click += new System.EventHandler(this.utilizaçãoDeSelosBDIToolStripMenuItem_Click);
             // 
@@ -168,23 +172,30 @@
             this.menuOptLivroCaixa.Name = "menuOptLivroCaixa";
             this.menuOptLivroCaixa.ShortcutKeyDisplayString = "F2";
             this.menuOptLivroCaixa.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.menuOptLivroCaixa.Size = new System.Drawing.Size(246, 26);
+            this.menuOptLivroCaixa.Size = new System.Drawing.Size(192, 22);
             this.menuOptLivroCaixa.Text = "Livro Caixa";
             this.menuOptLivroCaixa.Click += new System.EventHandler(this.menuOptLivroCaixa_Click);
+            // 
+            // menuOptCNJSemestral
+            // 
+            this.menuOptCNJSemestral.Name = "menuOptCNJSemestral";
+            this.menuOptCNJSemestral.Size = new System.Drawing.Size(192, 22);
+            this.menuOptCNJSemestral.Text = "CNJ Semestral";
+            this.menuOptCNJSemestral.Click += new System.EventHandler(this.cNJSemestralToolStripMenuItem_Click);
             // 
             // testesToolStripMenuItem
             // 
             this.testesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.teste1ToolStripMenuItem});
             this.testesToolStripMenuItem.Name = "testesToolStripMenuItem";
-            this.testesToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
+            this.testesToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.testesToolStripMenuItem.Text = "Testes";
             // 
             // teste1ToolStripMenuItem
             // 
             this.teste1ToolStripMenuItem.Name = "teste1ToolStripMenuItem";
             this.teste1ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.teste1ToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.teste1ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.teste1ToolStripMenuItem.Text = "Teste1";
             this.teste1ToolStripMenuItem.Click += new System.EventHandler(this.teste1ToolStripMenuItem_Click);
             // 
@@ -192,11 +203,10 @@
             // 
             this.tbcApplications.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbcApplications.ImageList = this.imageList1;
-            this.tbcApplications.Location = new System.Drawing.Point(0, 28);
-            this.tbcApplications.Margin = new System.Windows.Forms.Padding(4);
+            this.tbcApplications.Location = new System.Drawing.Point(0, 24);
             this.tbcApplications.Name = "tbcApplications";
             this.tbcApplications.SelectedIndex = 0;
-            this.tbcApplications.Size = new System.Drawing.Size(1067, 526);
+            this.tbcApplications.Size = new System.Drawing.Size(800, 426);
             this.tbcApplications.TabIndex = 1;
             this.tbcApplications.Visible = false;
             this.tbcApplications.SelectedIndexChanged += new System.EventHandler(this.tbcApplications_SelectedIndexChanged);
@@ -211,10 +221,9 @@
             // btnFrmMainMenuFecharAba
             // 
             this.btnFrmMainMenuFecharAba.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFrmMainMenuFecharAba.Location = new System.Drawing.Point(957, 1);
-            this.btnFrmMainMenuFecharAba.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFrmMainMenuFecharAba.Location = new System.Drawing.Point(718, 1);
             this.btnFrmMainMenuFecharAba.Name = "btnFrmMainMenuFecharAba";
-            this.btnFrmMainMenuFecharAba.Size = new System.Drawing.Size(100, 25);
+            this.btnFrmMainMenuFecharAba.Size = new System.Drawing.Size(75, 20);
             this.btnFrmMainMenuFecharAba.TabIndex = 2;
             this.btnFrmMainMenuFecharAba.Text = "Fechar Aba";
             this.btnFrmMainMenuFecharAba.UseVisualStyleBackColor = true;
@@ -223,15 +232,14 @@
             // 
             // frmMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnFrmMainMenuFecharAba);
             this.Controls.Add(this.tbcApplications);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calcula Custas";
@@ -264,6 +272,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuOptRelatorioUtilizacaoDeSelos;
         private System.Windows.Forms.ToolStripMenuItem menuOptImportarDespesasPDF;
         private System.Windows.Forms.ToolStripMenuItem menuOptLivroCaixa;
+        private System.Windows.Forms.ToolStripMenuItem menuOptCNJSemestral;
     }
 }
 
